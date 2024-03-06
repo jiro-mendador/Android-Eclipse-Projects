@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+     >
+    
+    <EditText 
+        android:layout_alignParentTop="true" 
+        android:id="@+id/etUpdateFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Name"
+        />
+    
+    <EditText 
+        android:id="@+id/etUpdateMidName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Middle Name"
+        android:layout_below="@id/etUpdateFirstName"
+        />
+    
+     <EditText 
+        android:id="@+id/etUpdateLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Name"
+        android:layout_below="@id/etUpdateMidName"
+        />
+     
+     <LinearLayout 
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="3"
+         >
+         
+         <Button 
+             android:id="@+id/btnUpdate"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="UPDATE"
+             android:layout_weight="1"
+             android:onClick="updateRecord"
+             />
+         
+         <Button 
+             android:id="@+id/btnDelete" 
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="DELETE"
+             android:layout_weight="1"
+             android:onClick="deleteRecord"
+             />
+         
+         <Button 
+             android:id="@+id/btnBack"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="BACK"
+             android:layout_weight="1"
+             android:onClick="back"
+             />
+     </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Act 02</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="inputHint">Enter An Integer</string>
+	<string name="btnTxt">Go</string>
+	<string name="tvPrCmp">Prime Or Composite</string>
+	<string name="tvBin">Binary Equivalent</string>
+	<string name="tvDiv">Divisible Numbers</string>
+	<string name="btnRes">Clear</string>
+</resources>

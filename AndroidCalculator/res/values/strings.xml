@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    
+	<string name="lbl0">0</string>
+	<string name="lbl1">1</string>
+	<string name="lbl2">2</string>
+	<string name="lbl3">3</string>
+	<string name="lbl4">4</string>
+	<string name="lbl5">5</string>
+	<string name="lbl6">6</string>
+	<string name="lbl7">7</string>
+	<string name="lbl8">8</string>
+	<string name="lbl9">9</string>
+	
+	<string name="lblPoint">.</string>
+	<string name="lblPlus">+</string>
+	<string name="lblMinus">-</string>
+	<string name="lblTimes">*</string>
+	<string name="lblDivide">/</string>
+	<string name="lblEquals">=</string>
+	<string name="lblClear">CA</string>
+	
+</resources>

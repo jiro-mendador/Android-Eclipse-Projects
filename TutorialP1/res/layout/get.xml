@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Relative Layout - dont need an orientation 
+	using relative u can use properties like
+	layout_below - takes an id that you wanted to be below to
+	layout_alignParentRight - takes a boolean then align it left/right of parent
+	layout_alignTop - takes an id that you wanted your top to be aligned to -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/sendEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+    </EditText>
+
+    <Button
+        android:id="@+id/startActivityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sendEt"
+        android:text="@string/startAct" />
+
+    <Button
+        android:id="@+id/startActivityForResultBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/startActivityBtn"
+        android:layout_toLeftOf="@id/startActivityBtn"
+        android:text="@string/startActForRes" />
+
+    <TextView
+        android:id="@+id/gotTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startActivityForResultBtn"
+        android:text="TextView" />
+
+</RelativeLayout>

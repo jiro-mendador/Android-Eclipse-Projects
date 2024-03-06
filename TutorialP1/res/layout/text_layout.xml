@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <!-- fill_parent : takes the available space-->
+    <!-- match_parent : takes the space of the parent -->
+    <!-- wrap_content : just take enough space for the content -->
+    <!-- Hint : like a placeholder -->
+    <!-- Padding : space around obj-->
+    <EditText
+        android:id="@+id/etCommands"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/comm"
+        android:inputType="textPassword" />
+
+    <!-- u can nest layouts-->
+    <!-- weightSum : to allocate the space on layout--> 
+    <!-- layout_weight : how much space it'll take (higher the smaller) -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" 
+        >
+
+        <Button
+            android:id="@+id/executeBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/exe" 
+            android:layout_weight="20"
+            />
+
+        <ToggleButton
+            android:id="@+id/tbPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:text="@string/toggleTxt" 
+            android:paddingBottom="0dp"
+            android:checked="true"
+            />
+    </LinearLayout>
+
+    <!-- gravity : is it's imediate position in it's available space -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/invalid"
+        android:textSize="30sp" />
+
+</LinearLayout>

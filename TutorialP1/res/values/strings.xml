@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<!--Texts-->
+    <string name="app_name">TutorialP1</string>
+    <string name="total">Your Total Is 0</string>
+    <string name="addOne">Add 1</string>
+    <string name="subOne">Subtract 1</string>
+    <string name="exe">Execute</string>
+    <string name="comm">Type A Command</string>
+    <string name="invalid">Invalid</string>
+    <string name="toggleTxt">ToggleButton</string>
+    
+    <string name="emailAdd">Email Address : </string>
+    <string name="intro">Intro :</string>
+    <string name="pName">Person\'s Name : </string>
+    <string name="desc">Description : </string>
+    <string name="action">Action : </string>
+    <string name="outro">Outro : </string>
+    <string name="send">Send Email</string>
+    
+    <string name="capture">Capture</string>
+    <string name="setBg">Set Background</string>
+    
+    <string name="startAct">Start Activity</string>
+    <string name="startActForRes">Start Activity For Result</string>
+    
+    
+    <string name="s1">Jiro is...</string>
+    <string name="s2">I Dont Think So</string>
+    <string name="c1">Good</string>
+    <string name="c2">Average</string>
+    <string name="c3">Very Good</string>
+    <string name="ret">Return</string>
+    
+    <!--Colors-->
+	<string name="colorBlack">#000000</string>
+	<string name="colorWhite">#FFFFFF</string>
+</resources>

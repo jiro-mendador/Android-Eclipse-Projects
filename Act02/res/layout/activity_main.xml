@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#F2F2C5"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/etNumInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:hint="@string/inputHint"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:paddingBottom="0dp"
+            android:text="@string/btnTxt" 
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPrimeComp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#80A66C"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/tvPrCmp"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvBinary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPrimeComp"
+        android:layout_marginTop="30dp"
+        android:background="#F2A950"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/tvBin"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvDivisibles"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tvBinary"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="#DD6761"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/tvDiv"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btnRes" />
+
+</RelativeLayout>

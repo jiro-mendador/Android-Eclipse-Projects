@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <TextView
+        android:id="@+id/tVquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RadioGroup
+        android:id="@+id/rGchoices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+		
+        <!-- checked - in radiobutton indicates if the button is checked or not at start -->
+        <RadioButton
+            android:id="@+id/rBchoice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c1" />
+         <!--android:checked="true" -->
+
+        <RadioButton
+            android:id="@+id/rBchoice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c2" />
+
+        <RadioButton
+            android:id="@+id/rBchoice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c3" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tVoutput "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s2" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ret" />
+
+</LinearLayout>

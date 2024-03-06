@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Splash Screen Dela Cruz</string>
+	<string name="lblSchool">University of Caloocan City</string>
+	<string name="lblName">Leslie Nicole Dela Cruz</string>
+	<string name="lblAddress">277 Tullahan Rd., Sta. Quiteria, Caloocan City</string>
+	<string name="lblSection">BSCS 2A</string>
+</resources>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical"
+    android:padding="10dp"
+     >
+     
+    <EditText 
+        android:layout_alignParentTop="true" 
+        android:id="@+id/etAddFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Name"
+        />
+    
+    <EditText 
+        android:id="@+id/etAddMidName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Middle Name"
+        android:layout_below="@id/etAddFirstName"
+        />
+    
+     <EditText 
+        android:id="@+id/etAddLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Name"
+        android:layout_below="@id/etAddMidName"
+        />
+     
+     <LinearLayout 
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="3"
+         >
+         
+         <Button 
+             android:id="@+id/btnAdd"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="ADD"
+             android:layout_weight="1"
+             android:onClick="addRecord"
+             />
+         
+         <Button 
+             android:id="@+id/btnView" 
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="VIEW"
+             android:layout_weight="1"
+             android:onClick="viewRecords"
+             />
+         
+         <Button 
+             android:id="@+id/btnClear"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="CLEAR"
+             android:layout_weight="1"
+             android:onClick="clearRecords"
+             />
+     </LinearLayout>
+
+</RelativeLayout>

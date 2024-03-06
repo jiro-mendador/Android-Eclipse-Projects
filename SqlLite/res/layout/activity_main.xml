@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Create_Account_form"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chato.eduardo.sqllite.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/Fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:maxLength="50" />
+
+        <EditText
+            android:id="@+id/Mname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/middle_name"
+            android:maxLength="50" />
+
+        <EditText
+            android:id="@+id/Lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/last_name"
+            android:maxLength="50" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:onClick="AddRecord"
+            android:text="@string/disp_save" />
+
+        <Button
+            android:id="@+id/btnViewRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:onClick="ViewRecords"
+            android:text="@string/disp_list" />
+
+        <Button
+            android:id="@+id/btnClearRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:onClick="ClearRecords"
+            android:text="@string/disp_clearlist" />
+    </LinearLayout>
+
+</ScrollView>

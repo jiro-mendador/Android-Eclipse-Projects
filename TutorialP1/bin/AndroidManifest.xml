@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tutorialp1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:label="@string/app_name" 
+            android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="com.tutorialP1.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="@string/app_name" 
+            android:name=".Background" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="@string/app_name" 
+            android:name=".Menu" >
+            <intent-filter>
+                <action android:name="com.tutorialP1.Menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="@string/app_name" 
+            android:name=".Texts" >
+            <!-- 
+            	the intent filter is no longer needed 
+            	because it's just saying that it is a DEFAULT CATEGORY 
+            	and the ACTION NAME is not needed because we are opening the class 
+            	in the java directly
+            -->
+        </activity>
+        
+        <activity
+            android:label="@string/app_name" 
+            android:name=".Email" >
+        </activity>
+        
+        <!-- u can also change the label into anything u want -->
+        <!-- u can also set screen orientation so it will be fixed -->
+         <activity
+            android:label="Camera App" 
+            android:name=".Camera" 
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:label="@string/app_name" 
+            android:name=".OpenedClass" >
+        </activity>
+        
+         <activity
+            android:label="@string/app_name" 
+            android:name=".Data" >
+        </activity>
+    </application>
+
+</manifest>

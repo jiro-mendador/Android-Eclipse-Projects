@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SQL</string>
+    <string name="first_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="disp_save">SAVE INFORMATION</string>
+    <string name="disp_update">UPDATE INFORMATION</string>
+    <string name="disp_back">BACK</string>
+    <string name="disp_list">VIEW RECORDS</string>
+    <string name="disp_clearlist">CLEAR RECORDS</string>
+    <string name="disp_delete">DELETE INFORMATION</string>
+    <string name="title_activity_records">RecordsActivity</string>
+    <string name="title_activity_update">UPDATE</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

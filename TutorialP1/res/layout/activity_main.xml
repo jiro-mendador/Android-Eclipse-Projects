@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <!-- 
+    tools:context="${relativePackage}.${activityClass}" 
+	-->
+	
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/total" 
+        android:textSize="45dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/displayTV"
+        />
+    
+    <Button 
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/addOne"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/addBtn"
+        />
+    
+    <Button 
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/subOne"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/subBtn"
+        />
+		
+    
+    
+    
+    
+</LinearLayout>
+
+
