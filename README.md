@@ -1,2 +1,2 @@
 # Android-Eclipse-Projects
-Different simple java android applications made using eclipse
+Simple java android applications made using Eclipse IDE
